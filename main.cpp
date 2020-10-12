@@ -2,7 +2,7 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -137,7 +137,7 @@ int main() {
         sportsData.dataChanged();
 
         //remove an observer
-        sportsData.unregisterObserver(&calcScoreDisplay);
+        sportsData.unregisterObserver(&currentScoreDisplay);
 
         // now only currentScoreDisplay gets the
         // notification
